@@ -1,6 +1,6 @@
-import CreditCardWidget from './creditCardWidget';
+import Popover from "./popover";
 
-const container = document.querySelector('.container');
+const btn = document.querySelector('button');
 
-const creditCardWidget = new CreditCardWidget(container);
-creditCardWidget.bindToDom();
+const popover = new Popover(btn);
+console.log(popover);

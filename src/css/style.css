@@ -2,16 +2,25 @@ body {
   color: #000;
 }
 
-h1 {
-  text-align: center;
+button {
+  position: relative;
+
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5%;
+
+  cursor: pointer;
 }
 
-img {
-  max-height: 50px;
-  border: 1px solid #000;
-  object-fit: contain;
-
-  opacity: 0.1;
+button:hover {
+  opacity: 0.6;
 }
 
 .cards {
@@ -25,10 +34,32 @@ img {
 }
 
 .container {
-  display: flex;
+  padding-top: 100px;
+  /* display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  /* justify-content:flex-end; */
+
+}
+
+.popover {
+  position: absolute;
+  width: 350px;
+  box-sizing: border-box;
+  /* padding: 7px; */
+  border: 1px solid black;
+  border-radius: 4%;
+}
+
+.popover-title {
+  font-weight: 700;
+  padding: 5px;
+  background-color: grey;
+}
+
+.popover-content {
+  padding: 5px;
 }
 
 .valid {
