@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import Popover from "../popover";
+import Popover from '../popover';
 
 test('popover is rendered', () => {
   const element = document.querySelector('button');
@@ -10,7 +10,7 @@ test('popover is rendered', () => {
   popover.showPopover();
   // document.querySelector('.popover')
   expect(document.querySelector('.popover')).toBeTruthy();
-})
+});
 
 /* test('popover should show after buttons clicking', () => {
 
