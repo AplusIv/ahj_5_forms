@@ -20,7 +20,6 @@ export default class Popover {
     popover.appendChild(popoverContent);
 
     return popover;
-    // document.body.appendChild(popover);
   }
 
   showPopover() {
@@ -34,7 +33,9 @@ export default class Popover {
     const { left, top } = this.element.getBoundingClientRect();
 
     popover.style.top = `${top - 5 - popover.offsetHeight}px`;
-    popover.style.left = `${left - popover.offsetWidth / 2 + this.element.offsetWidth / 2}px`;
+    popover.style.left = `${
+      left - popover.offsetWidth / 2 + this.element.offsetWidth / 2
+    }px`;
   }
 
   hidePopover() {

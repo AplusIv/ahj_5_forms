@@ -1,4 +1,4 @@
-import Popover from "./popover";
+import Popover from './popover';
 
 const btn = document.querySelector('button');
 
