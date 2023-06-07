@@ -35,8 +35,6 @@ export default class Popover {
 
     popover.style.top = `${top - 5 - popover.offsetHeight}px`;
     popover.style.left = `${left - popover.offsetWidth / 2 + this.element.offsetWidth / 2}px`;
-
-    // document.querySelector('.container').appendChild(popover);
   }
 
   hidePopover() {
