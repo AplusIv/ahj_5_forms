@@ -1,20 +1,23 @@
 module.exports = {
-  testEnvironment: 'jest-environment-node',
+  // testEnvironment: 'jest-environment-node',
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  modulePaths: ['/shared/vendor/modules'],
-  moduleFileExtensions: ['js', 'jsx'],
-  moduleDirectories: ['node_modules', 'bower_components', 'shared'],
-  transform: {
+  // modulePaths: ['/shared/vendor/modules'],
+  // moduleFileExtensions: ['js', 'jsx'],
+  // moduleDirectories: ['node_modules', 'bower_components', 'shared'],
+  /* transform: {
     '\\.[jt]sx?$': 'babel-jest',
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/fileTransformer.js',
-  },
-  /* moduleNameMapper: {
+  }, */
+  moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
-  }, */
-  moduleNameMapper: {
+  },
+  bail: 1,
+  verbose: true,
+  preset: 'jest-puppeteer',
+  /* moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/fileMock.js',
     // '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
@@ -22,7 +25,7 @@ module.exports = {
 
     // '^react(.*)$': '<rootDir>/vendor/react-master$1',
     '^config$': '<rootDir>/configs/app-config.js',
-  },
+  }, */
   // transform: {
   //   '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
   //     '<rootDir>/fileTransformer.js',

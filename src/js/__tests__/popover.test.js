@@ -12,6 +12,7 @@ test('popover is rendered', () => {
   expect(document.querySelector('.popover')).toBeTruthy();
 });
 
-/* test('popover should show after buttons clicking', () => {
-
-}) */
+test('button exists in DOM', () => {
+  const element = document.body.querySelector('button');
+  expect(element.classList.contains('btn')).toEqual(true);
+});
