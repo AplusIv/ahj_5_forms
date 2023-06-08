@@ -1,7 +1,7 @@
 {
   // "extends": "airbnb-base",
   "plugins": ["prettier", "jest"],
-  "extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
+  "extends": ["airbnb-base", "eslint:recommended", "plugin:prettier/recommended", "prettier"],
   "env": {
     "es6": true,
     "browser": true,
