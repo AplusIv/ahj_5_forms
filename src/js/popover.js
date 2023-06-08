@@ -48,10 +48,6 @@ export default class Popover {
   onElementClick(e) {
     e.preventDefault();
 
-    console.log('click');
-    console.log(e.target);
-    console.log(this);
-
     if (!e.target.classList.contains('popover-showed')) {
       this.showPopover();
     } else {
