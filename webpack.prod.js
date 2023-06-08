@@ -8,6 +8,14 @@ module.exports = merge(common, {
   mode: 'production',
   optimization: {
     minimize: true,
-    minimizer: [/* new OptimizeCSSAssetsPlugin({}) */new CssMinimizerPlugin(),, new TerserPlugin(), `...` /* '...' */],
+    minimizer: [new CssMinimizerPlugin(),, new TerserPlugin(), '...'],
   },
 });
+
+// module.exports = merge(common, {
+//   mode: 'production',
+//   optimization: {
+//     minimize: true,
+//     minimizer: [/* new OptimizeCSSAssetsPlugin({}) */new CssMinimizerPlugin(),, new TerserPlugin(), `...` /* '...' */],
+//   },
+// });
